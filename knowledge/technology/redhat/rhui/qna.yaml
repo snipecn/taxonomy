@@ -1,0 +1,105 @@
+version: 3
+domain: About Red Hat Update Infrastructure 4
+created_by: snipecn
+seed_examples:
+  - context: |
+        Red Hat Update Infrastructure 4 (RHUI 4) is a highly scalable, highly redundant
+        framework that enables you to manage repositories and content. It also enables cloud providers to
+        deliver content and updates to Red Hat Enterprise Linux (RHEL) instances. Based on the upstream Pulp
+        project, RHUI allows cloud providers to locally mirror Red Hat-hosted repository content, create custom
+        repositories with their own content, and make those repositories available to a large group of end users
+        through a load-balanced content delivery system.
+    questions_and_answers:
+      - question: |
+           what is Red Hat RHUI?
+        answer: |
+           Red Hat RHUI's full name is Red Hat Update Infrastructure which is a highly scalable, highly redundant
+           framework that enables you to manage repositories and content.
+      - question: |
+           what is the usage of RHUI?
+        answer: |
+           It also enables cloud providers to
+           deliver content and updates to Red Hat Enterprise Linux (RHEL) instances.
+      - question: |
+           what is RHUI upstream project?
+        answer: |
+           RHUI is builded based on the upstream Pulp
+           project, RHUI allows cloud providers to locally mirror Red Hat-hosted repository content, create custom
+           repositories with their own content, and make those repositories available to a large group of end users
+           through a load-balanced content delivery system.
+  - context: |
+        As a system administrator, you can prepare your infrastructure for participation in the Red Hat Certified
+        Cloud and Service Provider program by installing and configuring the Red Hat Update Appliance
+        (RHUA), content delivery servers (CDS), repositories, shared storage, and load balancing.
+    questions_and_answers:
+      - question: |
+            what components included in RHUI?
+        answer: |
+            RHUI components includes RHUA, CDS and load balancing.
+      - question: |
+            what is full name of RHUA?
+        answer: |
+            the RHUA full name is Red Hat Update Appliance.
+      - question: |
+            what is full name of CDS?
+        answer: |
+            the CDS full name is Content Delivery Servers
+  - context: |
+        There is one RHUA per RHUI installation, though in many cloud environments there will be one RHUI
+        installation per region or data center, for example, Amazon’s EC2 cloud comprises several regions. In
+        every region, there is a separate RHUI set up with its own RHUA node.
+    questions_and_answers:
+      - question: |
+            how many RHUA is installed in one RHUI environment?
+        answer: |
+            In one RHUI environment, only 1 RHUA node allow to be installed.
+      - question: |
+            how many RHUI will be setup in many cloud environments?
+        answer: |
+            the RHUI can be setup per region or data center.
+      - question: |
+            how Amazon's EC2 cloud distribute the RHUI?
+        answer: |
+            Amazon's EC2 cloud distribute the RHUI in every region
+  - context: |
+        The CDS nodes provide the repositories that clients connect to for the updated content. There can be
+        as few as one CDS. Because RHUI provides a load-balancer with failover capabilities, we recommended
+        that you use multiple CDS nodes.
+    questions_and_answers:
+      - question: |
+            what is the usage about CDS nodes?
+        answer: |
+            The CDS nodes provide the repositories that clients connect to for the updated content.
+      - question: |
+            how many CDS need to be setup at least?
+        answer: |
+            There can be as few as one CDS per RHUI environment.
+      - question: |
+            how many CDS is setup for recommendation?
+        answer: |
+            we recommended that you use multiple CDS nodes.
+  - context: |
+        The CDS nodes host content to end-user RHEL systems. While there is no required number of systems,
+        the CDS works in a round-robin style load-balanced fashion (A, B, C, A, B, C) to deliver content to end-
+        user systems. The CDS uses HTTP to host content to end-user systems via yum repositories.
+    questions_and_answers:
+      - question: |
+            how to work about CDS?
+        answer: |
+            The CDS nodes host content to end-user RHEL systems.
+      - question: |
+            how CDS delivery the content to enduser?
+        answer: |
+            the CDS works in a round-robin style load-balanced fashion (A, B, C, A, B, C) to deliver content to enduser systems.
+      - question: |
+            what the protocol use by CDS?
+        answer: |
+            The CDS uses HTTP to host content to end-user systems via yum repositories.
+document_outline: |
+  Red Hat RHUI 4 introduce
+document:
+  repo: https://github.com/snipecn/taxonomy.git
+  commit: 1801b010fc253fbb4cb77162cb31ad18867148cc
+  patterns:
+    - Red_Hat_Update_Infrastructure-4-Configuring_and_Managing_Red_Hat_Update_Infrastructure-en-US.pdf
+
