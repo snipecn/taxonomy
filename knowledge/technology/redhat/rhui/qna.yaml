@@ -98,8 +98,7 @@ seed_examples:
 document_outline: |
   Red Hat RHUI 4 introduce
 document:
-  repo: https://github.com/snipecn/taxonomy.git
+  repo: https://ssh.github.com/snipecn/taxonomy.git
   commit: 1801b010fc253fbb4cb77162cb31ad18867148cc
   patterns:
     - Red_Hat_Update_Infrastructure-4-Configuring_and_Managing_Red_Hat_Update_Infrastructure-en-US.pdf
-
